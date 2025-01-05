@@ -4,8 +4,8 @@
 
 Download https://github.com/neovim/neovim/releases
 
-.appimage for linux
-.deb for debian ... etc
+- .appimage for linux
+- .deb for debian ... etc
 
 ## Move 
 sudo mv ~/Descargas/nvim.appimage /opt/nvim.appimage
