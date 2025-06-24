@@ -72,3 +72,8 @@ map('t', '<leader>j', '<C-\\><C-n>:ToggleTerm<CR>', opts)
 -- Abrir terminal flotante con <leader>h
 map('n', '<leader>h', ':lua toggle_floating_terminal()<CR>', opts)
 map('t', '<leader>h', '<C-\\><C-n>:lua toggle_floating_terminal()<CR>', opts)
+
+map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
+map('n', '<leader>nm', ':Telescope buffers<CR>', opts)
+map('n', '<leader>l', ':Telescope lsp_definitions<CR>', opts)
+map('n', '<C-f>', ':Telescope current_buffer_fuzzy_find<CR>', opts)

@@ -77,4 +77,26 @@ return require('packer').startup(function()
     }
 
     -- Otros plugins...
+    -- These optional plugins should be loaded directly because of a bug in Packer lazy loading
+    use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
+    use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+    use 'romgrk/barbar.nvim'
+
+    -- TELESOCPE 
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
+      -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+      }
+
+      use 'hrsh7th/nvim-cmp' -- Motor de autocompletado
+      use 'hrsh7th/cmp-nvim-lsp' -- Fuente de LSP para nvim-cmp
+      use 'hrsh7th/cmp-buffer' -- Fuente para autocompletar desde el buffer actual
+      use 'hrsh7th/cmp-path' -- Autocompletado para rutas
+      use 'saadparwaiz1/cmp_luasnip' -- Integración con snippets
+      use 'L3MON4D3/LuaSnip' -- Motor de snippets
+      
+
+
+
 end)
